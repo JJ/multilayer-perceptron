@@ -1,3 +1,53 @@
+var Axon = {};
+
+Axon.new = function() {
+	return {
+		outboundDendrites: [],
+		fire:function(value) {
+			var activationValue = this.calculateActivationValue(value);
+			var dendrites = this.getOutboundDendrites();
+			for (var i = 0; i < dendrites.length; i++) {
+				var dendrite = dendrites[i];
+				dendrite.fire(activationValue);
+			}		
+		},
+		getOutboundDendrites: function() {
+			return this.outboundDendrites;
+		},
+		addOutboundDendrite: function(dendrite) {
+			this.outboundDendrites.push(dendrite);
+		},
+		//Sigmoid activation function
+		calculateActivationValue: function(value) {
+			return 1/(1+Math.pow(Math.E, -value));
+		}
+	};
+};
+
+
+class Axon {
+  
+  constructor() {
+    this._outboundDendrites = [];
+  }
+ 
+  get outboundDendrites() {
+    return this._outboundDendrites;
+  }
+ 
+  fire() {
+    let activationValue = this.calculateActivationValue(value);
+    let dendrites = this.outboundDendrites;
+    
+    for (let i = 0; i < dendrites.length; i++) { 
+       let dendrite = dendrites[i];
+       dendrite.fire(activationValue);
+    }
+  }
+}
+
+
+
 class Dendrite {
   
   constructor(neuron) {
