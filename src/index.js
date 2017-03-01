@@ -114,17 +114,16 @@ class InputLayer extends NeuronLayer {
 
 export default class MultilayerPerceptron {
 
-  constructor(neuronCounts) {
-    this._neuronCounts = neuronCounts;
-    this._inputLayer = new InputLayer(neuronCounts[0]);
-  }
-
-  get neuronCounts() {
-    return this._neuronCounts;
-  }
-
-  get layersCount() {
-    return this._neuronCounts.length;
+  constructor(inputNeuronCount, hiddenLayerNeuronCounts, outputLayerNeuronCount) {
+    this._inputLayer = new InputLayer(inputNeuronCount);
+    this._outputLayer = new OutputLayer(outputNeuronCount);
+    this._hiddenLayers = []; 
+   
+    for (let i = 0; i < hiddenLayerNeuronCounts.length; i++) {
+      let hiddenLayerNeuronCount = hiddenLayerNeuronCounts[i];
+      let hiddenLayer = new HiddenLayer(hiddenLayerNeuronCount);
+      this._hiddenLayers.push(hiddenLayer);
+    }  
   }
 
   get inputLayer() {
