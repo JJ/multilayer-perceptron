@@ -1,6 +1,10 @@
 # multilayer-perceptron
 Multilayer Perceptron Neural Network
 
+## Important!
+
+This is a project under construction. The Multilayer Perceptron neural network sketched here is not functional yet!
+
 ## Description
 This an implementation of the multilayer perceptron (MLP) neural network model in ES6 programming language. 
 A MLP can solve categorization and predictive analytics tasks.
