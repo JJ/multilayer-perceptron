@@ -24,7 +24,7 @@ This project
 * Test with Mocha, Chai and Sinon
 * Use Karma to run the tests
 
-The initial project structure was created using Krasimir Tsonev's great [react-webpack-starter boilerplate]!(https://github.com/krasimir/react-webpack-starter)
+The initial project structure was created using Krasimir Tsonev's great [react-webpack-starter boilerplate](https://github.com/krasimir/react-webpack-starter)!
 
 ## Scripts
 
