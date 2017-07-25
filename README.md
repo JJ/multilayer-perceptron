@@ -18,11 +18,11 @@ Apache License, Version 2.0
 ## Project Structure
 
 This project
--Compiles ES6 (with Babel)
--Linting (with ESLint)
--Build with webpack
--Test with Mocha, Chai and Sinon
--Use Karma to run the tests
+* Compiles ES6 (with Babel)
+* Linting (with ESLint)
+* Build with webpack
+* Test with Mocha, Chai and Sinon
+* Use Karma to run the tests
 
 The initial project structure was created using Krasimir Tsonev's great [react-webpack-starter boilerplate]!(https://github.com/krasimir/react-webpack-starter)
 
