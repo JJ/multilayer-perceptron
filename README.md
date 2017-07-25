@@ -47,6 +47,3 @@ every time I get bored or fired.
 * [My thoughts about neural networks](http://www.oppikone.fi/blog/object-oriented-neural-network-in-javascript.html)
 * [Wikipedia article on multilayer perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron)
 
-## Project Structure
-
-This 
