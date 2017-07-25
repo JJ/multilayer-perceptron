@@ -1,4 +1,6 @@
-class InputLayer extends NeuronLayer {
+import { NeuronLayer } from './NeuronLayer.js'
+
+export class InputLayer extends NeuronLayer {
 
   constructor(neuronCount) {
     super(neuronCount);
