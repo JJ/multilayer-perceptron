@@ -11,6 +11,17 @@ Heikki Kupiainen / Oppikone
 ## License
 Apache License, Version 2.0
 
+## Project Structure
+
+This project
+-Compiles ES6 (with Babel)
+-Linting (with ESLint)
+-Build with webpack
+-Test with Mocha, Chai and Sinon
+-Use Karma to run the tests
+
+The initial project structure was created using Krasimir Tsonev's great [react-webpack-starter boilerplate]!(https://github.com/krasimir/react-webpack-starter)
+
 ## Scripts
 
 * `npm run build` - produces production version of MLP library under the `lib` folder
@@ -31,3 +42,7 @@ every time I get bored or fired.
 
 * [My thoughts about neural networks](http://www.oppikone.fi/blog/object-oriented-neural-network-in-javascript.html)
 * [Wikipedia article on multilayer perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron)
+
+## Project Structure
+
+This 
